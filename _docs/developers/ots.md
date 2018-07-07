@@ -4,7 +4,6 @@ categories: developers
 tags: developers
 ---
 
-
 When you create a new wallet you create an XMSS tree, which is comprised of many public-private key pairs below a merkle tree to make a signature scheme. Every signature is referenced as your OTS index or *One Time Signature* key index. 
 
 One-time signatures (OTS) are called one-time, because the accompanying security reductions only guarantee security under single-message attacks.
@@ -65,7 +64,7 @@ There are a few oddities with the OTS keys.
 | Keys | Info |
 |:----:|:----:|
 |0 --> 8191 | Bitfield tracks the use. May be used in any order |
-| 8192 --> Last OTS | Must be used in ascending order - cannot return to sign below last OTS position |
+| {{ layout.v.general.otskeys }} --> Last OTS | Must be used in ascending order - cannot return to sign below last OTS position |
 
 
 
